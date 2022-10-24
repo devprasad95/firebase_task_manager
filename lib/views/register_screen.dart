@@ -63,7 +63,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: const Text('Go to login screen'),
+              child: const Text('Go to back'),
             ),
           ],
         ),
