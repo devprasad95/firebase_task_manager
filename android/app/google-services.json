@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179498061549",
+    "project_id": "selfmade-task-manager",
+    "storage_bucket": "selfmade-task-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179498061549:android:0691ed24997f919dd686e4",
+        "android_client_info": {
+          "package_name": "com.example.firebase_task_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179498061549-de2ausitpfnvdal5vjhea0ld5ce0j09c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApxuIW8T8Za1yBeA2mScgAyA4iELoiH8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179498061549-de2ausitpfnvdal5vjhea0ld5ce0j09c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
