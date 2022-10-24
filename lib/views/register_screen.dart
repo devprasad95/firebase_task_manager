@@ -50,6 +50,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       content: Text(messsage!),
                     ),
                   );
+                  Navigator.of(context).pop();
                 }
                 _emailController.clear();
                 _passwordController.clear();
