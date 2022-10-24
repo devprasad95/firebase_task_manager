@@ -1,5 +1,4 @@
 import 'package:firebase_task_manager/service/auth_service.dart';
-import 'package:firebase_task_manager/views/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -62,11 +61,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
             TextButton(
               onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => const LoginScreen(),
-                  ),
-                );
+                Navigator.of(context).pop();
               },
               child: const Text('Go to login screen'),
             ),

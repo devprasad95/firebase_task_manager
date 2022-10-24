@@ -1,5 +1,7 @@
 import 'package:firebase_task_manager/service/auth_service.dart';
+import 'package:firebase_task_manager/views/error_screen.dart';
 import 'package:firebase_task_manager/views/home_screen.dart';
+import 'package:firebase_task_manager/views/loading_screen.dart';
 import 'package:firebase_task_manager/views/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -29,6 +31,10 @@ class MyApp extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return const HomeScreen();
+          } else if (snapshot.connectionState == ConnectionState.waiting) {
+            return const LoadingScreen();
+          } else if (snapshot.hasError) {
+            return const ErrorScreen();
           } else {
             return const LoginScreen();
           }
