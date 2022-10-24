@@ -53,7 +53,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   child: CheckboxListTile(
                     value: streamSnapshot.data!.docs[index]['isDone'],
-                    onChanged: (value) {},
+                    onChanged: (value) {
+                      CrudService().completeTask(id: taskId, complete: value!);
+                    },
                     title: Text(streamSnapshot.data!.docs[index]['task']),
                   ),
                 );

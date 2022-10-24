@@ -24,4 +24,13 @@ class CrudService {
   }) async {
     await users.doc(AuthService().userId).collection('tasks').doc(id).delete();
   }
+
+  Future<void> completeTask(
+      {required String id, required bool complete}) async {
+    await users.doc(AuthService().userId).collection('tasks').doc(id).update(
+      {
+        'isDone': complete,
+      },
+    );
+  }
 }
